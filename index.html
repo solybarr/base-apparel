@@ -6,6 +6,7 @@
         <!-- displays site properly based on user's device -->
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="scripts.js"></script>
         <title>Frontend Mentor | Base Apparel coming soon page | by Solybarr</title>
     </head>
     <body>
@@ -14,17 +15,19 @@
                 <img class="logo" src="images/logo.svg" alt="Base Apparel">
             </header>
             <div class="hero">
-                <img class="hero__img" src="images/hero-mobile.jpg" alt="Hero Mobile">
+                &nbsp;
             </div>
             <div class="main">
                 <h1 class="main__title">We're <span>coming soon</span></h1>
                 <p class="main__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-                <form action="#" class="form">
+                <form action="#" class="form" name="emailForm">
                     <label for="email"></label>
                     <input type="email" name="visitor-email" id="email" placeholder="Email Address">
                     <label for="image"></label>
-                    <input type="image" name="image" src="images/icon-arrow.svg" alt="Send" id="image">
+                    <input type="image" name="image" src="images/icon-arrow.svg" alt="Send" id="image" onclick="checkEmail()">
+                    
                 </form>
+                <span id="error"></span>
             </div>
         </div>
 
@@ -34,5 +37,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/solybarr/" target="_blank">Solybarr</a>. </p>
         </footer>
+
+
     </body>
 </html>
